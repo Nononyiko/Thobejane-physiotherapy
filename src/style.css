@@ -31,7 +31,7 @@ min-height: 700px;
 
   background-image: linear-gradient(rgba(0,0,0,0.4) ,rgba(0,0,0,0.4)), 
   url("images/pt.logo.png");
-  background-size: cover;
+  background-size: 350 px;
   background-repeat: no-repeat;
   
 }
