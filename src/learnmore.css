@@ -15,15 +15,13 @@ body{
     margin:0 auto;
 }
 
-
-
 .learn-header{
     min-height:75vh;
     padding:30px 60px;
 
     background-image:
     linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("src/images/logo.pt.png");
+    url("images/logo.pt.png");
 
     background-size:cover;
     background-position:center;
@@ -32,12 +30,11 @@ body{
     flex-direction:column;
 }
 
-
-
 nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    position:relative;
 }
 
 .logo img{
@@ -64,7 +61,19 @@ nav a:hover{
     color:#00a8c6;
 }
 
+/* Hamburger */
 
+#menu-toggle{
+    display:none;
+}
+
+.hamburger{
+    display:none;
+    font-size:34px;
+    color:white;
+    cursor:pointer;
+    user-select:none;
+}
 
 .hero{
     text-align:center;
@@ -99,8 +108,6 @@ nav a:hover{
     background:#007d95;
 }
 
-
-
 .content-section{
     background:white;
     margin:70px auto;
@@ -131,8 +138,6 @@ nav a:hover{
     box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
-
-
 .services-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -161,8 +166,6 @@ nav a:hover{
 .service-card p{
     font-size:16px;
 }
-
-
 
 .features{
     display:grid;
@@ -193,7 +196,6 @@ nav a:hover{
     margin-bottom:10px;
     color:#010627;
 }
-
 
 .cta{
     text-align:center;
@@ -226,8 +228,6 @@ nav a:hover{
     color:white;
 }
 
-
-
 footer{
     background:#010627;
     color:white;
@@ -243,8 +243,6 @@ footer a{
 footer a:hover{
     text-decoration:underline;
 }
-
-
 
 @media(max-width:900px){
 
@@ -269,13 +267,35 @@ padding:20px;
 }
 
 nav{
-flex-direction:column;
-gap:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.logo img{
+width:70px;
+height:70px;
+}
+
+.hamburger{
+display:block;
 }
 
 nav ul{
+display:none;
 flex-direction:column;
+width:100%;
 text-align:center;
+margin-top:20px;
+gap:20px;
+background:#010627;
+padding:20px 0;
+border-radius:12px;
+}
+
+#menu-toggle:checked ~ ul{
+display:flex;
 }
 
 .services-grid{
@@ -292,6 +312,12 @@ font-size:36px;
 
 .hero p{
 font-size:17px;
+}
+
+.button{
+display:block;
+width:220px;
+margin:15px auto;
 }
 
 }
@@ -316,9 +342,7 @@ font-size:16px;
 }
 
 .button{
-display:block;
 width:220px;
-margin:15px auto;
 }
 
 }
