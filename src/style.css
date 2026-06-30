@@ -29,15 +29,16 @@ body {
 }
 
 /* =====================
-   HEADER
+   HEADER (BACKGROUND IMAGE FIXED)
 ===================== */
 header {
   min-height: 100vh;
   padding: 30px 60px;
 
+  /* ✔ YOUR ORIGINAL IMAGE FIXED PATH */
   background-image:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url("src/images/logo.pt.png");
+    url("images/pt.logo.png");
 
   background-size: cover;
   background-position: center;
@@ -82,7 +83,7 @@ nav a:hover {
 }
 
 /* =====================
-   HAMBURGER MENU (CHECKBOX METHOD)
+   HAMBURGER MENU
 ===================== */
 #menu-toggle {
   display: none;
@@ -154,7 +155,7 @@ section h2 {
 }
 
 /* =====================
-   CONTACT SECTION
+   CONTACT
 ===================== */
 .contact {
   background: #eef8fb;
@@ -167,51 +168,43 @@ section h2 {
   font-size: 18px;
 }
 
-/* CONTACT GRID */
+/* CONTACT CARDS (Instagram-style small) */
 .contact-details {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
-/* CONTACT CARD */
 .contact-item {
   background: white;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
   transition: 0.3s;
+  text-align: center;
 }
 
 .contact-item:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
 }
 
-/* ICONS */
 .contact-item i {
-  font-size: 30px;
+  font-size: 18px;   /* FIXED SMALL ICON SIZE */
   color: #00a8c6;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
-/* TEXT + LINKS */
-.contact-item a {
-  text-decoration: none;
-  color: #010627;
-  font-weight: 600;
-}
-
-.contact-item a:hover {
-  color: #00a8c6;
-}
-
+.contact-item a,
 .contact-item p {
-  color: #555;
-  line-height: 1.6;
+  font-size: 14px;
+  color: #010627;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 /* =====================
-   OPERATING HOURS
+   HOURS
 ===================== */
 .hours {
   max-width: 700px;
@@ -260,18 +253,8 @@ footer a {
 }
 
 /* =====================
-   MOBILE RESPONSIVE
+   RESPONSIVE
 ===================== */
-@media (max-width: 992px) {
-  .hero h1 {
-    font-size: 52px;
-  }
-
-  .hero h2 {
-    font-size: 32px;
-  }
-}
-
 @media (max-width: 768px) {
 
   header {
@@ -319,20 +302,5 @@ footer a {
 
   .contact-details {
     grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-
-  .hero h1 {
-    font-size: 34px;
-  }
-
-  .hero h2 {
-    font-size: 22px;
-  }
-
-  .button {
-    width: 180px;
   }
 }
