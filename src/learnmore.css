@@ -1,0 +1,325 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background:#f5f9fc;
+    color:#333;
+}
+
+.container{
+    max-width:1200px;
+    margin:0 auto;
+}
+
+/* ---------- HEADER ---------- */
+
+.learn-header{
+    min-height:75vh;
+    padding:30px 60px;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("images/physio-treatment.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+}
+
+/* ---------- NAVIGATION ---------- */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00a8c6;
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+    text-align:center;
+    margin:auto;
+    max-width:750px;
+}
+
+.hero h1{
+    color:white;
+    font-size:56px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:white;
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.button{
+    display:inline-block;
+    padding:15px 35px;
+    border-radius:30px;
+    background:#00a8c6;
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.button:hover{
+    background:#007d95;
+}
+
+/* ---------- CONTENT ---------- */
+
+.content-section{
+    background:white;
+    margin:70px auto;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.content-section h2{
+    text-align:center;
+    color:#00a8c6;
+    margin-bottom:30px;
+    font-size:38px;
+}
+
+.content-section p{
+    font-size:18px;
+    line-height:1.8;
+    color:#555;
+}
+
+.about-image{
+    display:block;
+    width:100%;
+    max-width:800px;
+    margin:35px auto;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+/* ---------- SERVICES ---------- */
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-top:40px;
+}
+
+.service-card{
+    background:#eef8fb;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.service-card h3{
+    margin-bottom:15px;
+    color:#010627;
+}
+
+.service-card p{
+    font-size:16px;
+}
+
+/* ---------- FEATURES ---------- */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.feature{
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+}
+
+.feature-icon{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#00a8c6;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.feature h3{
+    margin-bottom:10px;
+    color:#010627;
+}
+
+/* ---------- CTA ---------- */
+
+.cta{
+    text-align:center;
+    margin:70px auto;
+    padding:60px 30px;
+    border-radius:20px;
+    background:linear-gradient(135deg,#00a8c6,#007d95);
+    color:white;
+}
+
+.cta h2{
+    color:white;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    color:white;
+    margin-bottom:30px;
+}
+
+.cta .button{
+    background:white;
+    color:#00a8c6;
+    margin:10px;
+}
+
+.cta .button:hover{
+    background:#010627;
+    color:white;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+    background:#010627;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+footer a{
+    color:#00a8c6;
+    text-decoration:none;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:900px){
+
+.services-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.features{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:44px;
+}
+
+}
+
+@media(max-width:768px){
+
+.learn-header{
+padding:20px;
+}
+
+nav{
+flex-direction:column;
+gap:20px;
+}
+
+nav ul{
+flex-direction:column;
+text-align:center;
+}
+
+.services-grid{
+grid-template-columns:1fr;
+}
+
+.content-section{
+padding:30px;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+}
+
+@media(max-width:480px){
+
+.logo img{
+width:70px;
+height:70px;
+}
+
+.content-section{
+padding:20px;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.button{
+display:block;
+width:220px;
+margin:15px auto;
+}
+
+}
