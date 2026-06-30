@@ -8,17 +8,7 @@ body {
   background-color: #e8f7fa;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
 
-  background: url("images/pt.logo.png") center center no-repeat;
-  background-size: 450px;
-
-  opacity: 0.2;
-  z-index: -1;
-}
 
 .container {
   text-align: center;
@@ -36,7 +26,10 @@ body::before {
 }
 
 header{
-  background-image: linear-gradient(rgba (0,0,0,0.4) ,rgba(0,0,0,0.4)), 
+min-height: 700px;
+  padding: 100px 20px;
+
+  background-image: linear-gradient(rgba(0,0,0,0.4) ,rgba(0,0,0,0.4)), 
   url("images/pt.logo.png");
   background-size: cover;
   background-repeat: no-repeat;
