@@ -1,10 +1,12 @@
 
 
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 body {
   font-family: "Poppins", sans-serif;
@@ -23,7 +25,7 @@ body {
 
 header {
   min-height: 100vh;
-  padding: 40px 80px;
+  padding: 30px 60px;
 
   display: flex;
   flex-direction: column;
@@ -33,13 +35,41 @@ header {
   text-align: center;
 
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.45),
-    rgba(0, 0, 0, 0.45)),
-    url("images/physio-room.jpg");
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("images/logo.pt.png");
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+nav p {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00a8c6;
 }
 
 
@@ -50,22 +80,22 @@ header {
 
 .hero h1 {
   color: white;
-  font-size: 72px;
+  font-size: 70px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .hero h2 {
-  color: #2ec4d6;
+  color: #00a8c6;
   font-size: 40px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .hero p {
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.8;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 
@@ -75,10 +105,11 @@ header {
   margin: 10px;
   padding: 15px 35px;
 
-  background: #00a8c6;
+  text-decoration: none;
   color: white;
 
-  text-decoration: none;
+  background-color: #00a8c6;
+
   border-radius: 30px;
 
   font-weight: 600;
@@ -87,27 +118,27 @@ header {
 }
 
 .button:hover {
-  background: #0088a3;
+  background-color: #007d95;
 }
 
 
 
 section {
-  padding: 80px 40px;
+  padding: 80px 30px;
 }
 
 section h2 {
   text-align: center;
-  font-size: 40px;
+  font-size: 42px;
   color: #00a8c6;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
-
 
 
 #about {
   background: white;
 }
+
 
 
 #services {
@@ -120,15 +151,17 @@ section h2 {
   background: white;
 }
 
+
+
 footer {
-  text-align: center;
-  padding: 20px;
-  background: #010627;
+  background-color: #010627;
   color: white;
+  text-align: center;
+  padding: 25px;
 }
 
 footer a {
-  color: #2ec4d6;
+  color: #00a8c6;
   text-decoration: none;
 }
 
@@ -138,14 +171,23 @@ footer a:hover {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 
   header {
-    padding: 30px 20px;
+    padding: 30px;
+  }
+
+  nav {
+    margin-bottom: 50px;
+  }
+
+  nav p {
+    display: block;
+    margin: 15px 0;
   }
 
   .hero h1 {
-    font-size: 48px;
+    font-size: 50px;
   }
 
   .hero h2 {
@@ -162,7 +204,35 @@ footer a:hover {
     margin: 15px auto;
   }
 
+  section {
+    padding: 60px 20px;
+  }
+
   section h2 {
-    font-size: 32px;
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .button {
+    width: 200px;
+    padding: 12px 25px;
   }
 }
