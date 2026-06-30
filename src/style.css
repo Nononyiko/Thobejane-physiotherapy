@@ -20,9 +20,9 @@ body {
   color: rgb(9, 9, 9);
 
   padding: 20px;
-  border-radius: 10px;
+  
 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
 }
 
 header{
@@ -30,9 +30,10 @@ min-height: 700px;
   padding: 100px 20px;
 
   background-image: linear-gradient(rgba(0,0,0,0.4) ,rgba(0,0,0,0.4)), 
-  url("images/pt.logo.png");
+  url("images/logo.pt.png");
   background-size: 350 px;
   background-repeat: no-repeat;
+  background-position: center center;
   
 }
 
