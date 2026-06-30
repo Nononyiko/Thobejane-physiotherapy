@@ -22,9 +22,9 @@ body::before {
 
 .container {
   text-align: center;
-  margin: 80px auto;
-  width: 80%;
-  max-width: 900px;
+  margin: 0 auto;
+  
+  max-width: 1400px;
 
   
   color: rgb(9, 9, 9);
@@ -33,6 +33,14 @@ body::before {
   border-radius: 10px;
 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header{
+  background-image: linear-gradient(rgba (0,0,0,0.4)) ,(rgba(0,0,0,0.4)), 
+  url("images/pt.logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  
 }
 
 footer {
