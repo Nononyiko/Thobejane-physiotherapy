@@ -153,7 +153,7 @@ section h2 {
 }
 
 /* =====================
-   GLOBAL ICON SIZE (ALL ICONS)
+   GLOBAL ICON SIZE
 ===================== */
 i {
   font-size: 18px;
@@ -161,7 +161,7 @@ i {
 }
 
 /* =====================
-   CONTACT SECTION (INSTAGRAM STYLE FIXED)
+   CONTACT SECTION (HORIZONTAL INSTAGRAM STYLE)
 ===================== */
 .contact {
   background: #eef8fb;
@@ -174,19 +174,18 @@ i {
   font-size: 18px;
 }
 
-/* STACKED SMALL CONTACT ITEMS */
+/* HORIZONTAL LAYOUT */
 .contact-details {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 12px;
 }
 
-/* SMALL INSTAGRAM STYLE BOX */
+/* SMALL CONTACT ITEMS */
 .contact-item {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
 
   background: white;
@@ -196,16 +195,16 @@ i {
   box-shadow: 0 4px 10px rgba(0,0,0,0.06);
   transition: 0.2s;
 
-  max-width: 320px;
-  width: 100%;
+  max-width: 260px;
+  width: auto;
 }
 
-/* SUBTLE HOVER (NOT BIG CARDS) */
+/* SUBTLE HOVER */
 .contact-item:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
-/* TEXT */
+/* TEXT INSIDE CONTACT */
 .contact-item a,
 .contact-item p {
   font-size: 14px;
@@ -216,7 +215,7 @@ i {
 }
 
 /* =====================
-   HOURS (UNCHANGED STYLE)
+   HOURS SECTION
 ===================== */
 .hours {
   max-width: 700px;
@@ -312,8 +311,14 @@ footer a {
     margin: 15px auto;
   }
 
+  .contact-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .contact-item {
-    max-width: 280px;
+    width: 90%;
+    justify-content: center;
   }
 }
 
