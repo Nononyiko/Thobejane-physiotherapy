@@ -1,5 +1,7 @@
 
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +12,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f5f9fc;
+  background: #f5f9fc;
   color: #333;
-  line-height: 1.6;
 }
 
 
@@ -27,14 +28,11 @@ body {
 header {
   min-height: 100vh;
   padding: 30px 60px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
 
   background-image:
     linear-gradient(
-      rgba(0, 0, 0, 0.45),
-      rgba(0, 0, 0, 0.45)
+      rgba(0,0,0,.45),
+      rgba(0,0,0,.45)
     ),
     url("images/logo.pt.png");
 
@@ -46,20 +44,22 @@ header {
 
 
 nav {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 100px;
+  position: relative;
 }
+
+
 
 .logo img {
   width: 90px;
   height: 90px;
   border-radius: 50%;
   object-fit: cover;
-  display: block;
 }
+
+
 
 nav ul {
   display: flex;
@@ -67,16 +67,12 @@ nav ul {
   gap: 40px;
 }
 
-nav li {
-  list-style: none;
-}
-
 nav a {
   text-decoration: none;
   color: white;
   font-size: 18px;
   font-weight: 500;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 nav a:hover {
@@ -84,22 +80,35 @@ nav a:hover {
 }
 
 
+
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 34px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
 .hero {
+  text-align: center;
   max-width: 700px;
-  margin: auto;
+  margin: 120px auto;
 }
 
 .hero h1 {
   color: white;
   font-size: 70px;
-  font-weight: 700;
-  margin-bottom: 15px;
 }
 
 .hero h2 {
   color: #00a8c6;
   font-size: 40px;
-  margin-bottom: 20px;
+  margin: 15px 0;
 }
 
 .hero p {
@@ -114,16 +123,15 @@ nav a:hover {
   display: inline-block;
   margin: 10px;
   padding: 15px 35px;
-  background-color: #00a8c6;
+  background: #00a8c6;
   color: white;
   text-decoration: none;
   border-radius: 30px;
-  font-weight: 600;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 .button:hover {
-  background-color: #007d95;
+  background: #007d95;
 }
 
 
@@ -134,27 +142,14 @@ section {
 
 section h2 {
   text-align: center;
-  font-size: 42px;
   color: #00a8c6;
-  margin-bottom: 30px;
-}
-
-#about {
-  background: white;
-}
-
-#services {
-  background: #eef8fb;
-}
-
-#contact {
-  background: white;
+  font-size: 40px;
 }
 
 
 
 footer {
-  background-color: #010627;
+  background: #010627;
   color: white;
   text-align: center;
   padding: 25px;
@@ -162,129 +157,116 @@ footer {
 
 footer a {
   color: #00a8c6;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
 
 
 
-@media (max-width: 992px) {
+@media (max-width:992px){
 
-  header {
-    padding: 30px;
-  }
+.hero h1{
+font-size:52px;
+}
 
-  nav {
-    margin-bottom: 70px;
-  }
+.hero h2{
+font-size:32px;
+}
 
-  nav ul {
-    gap: 25px;
-  }
+.hero p{
+font-size:18px;
+}
 
-  .hero h1 {
-    font-size: 55px;
-  }
+nav ul{
+gap:25px;
+}
 
-  .hero h2 {
-    font-size: 34px;
-  }
-
-  .hero p {
-    font-size: 18px;
-  }
-
-  section {
-    padding: 60px 20px;
-  }
-
-  section h2 {
-    font-size: 34px;
-  }
 }
 
 
 
-@media (max-width: 768px) {
+@media (max-width:768px){
 
-  header {
-    padding: 20px;
-  }
+header{
+padding:20px;
+}
 
-  nav {
-    flex-direction: column;
-    gap: 25px;
-    margin-bottom: 50px;
-  }
+nav{
+flex-wrap:wrap;
+}
 
-  .logo img {
-    width: 70px;
-    height: 70px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
-  }
-
-  nav a {
-    font-size: 16px;
-  }
-
-  .hero h1 {
-    font-size: 42px;
-  }
-
-  .hero h2 {
-    font-size: 28px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  .button {
-    display: block;
-    width: 220px;
-    margin: 15px auto;
-  }
+.logo img{
+width:70px;
+height:70px;
 }
 
 
 
-@media (max-width: 480px) {
+.hamburger{
+display:block;
+}
 
-  .logo img {
-    width: 60px;
-    height: 60px;
-  }
 
-  .hero h1 {
-    font-size: 34px;
-  }
 
-  .hero h2 {
-    font-size: 22px;
-  }
+nav ul{
+display:none;
+flex-direction:column;
+width:100%;
+text-align:center;
+margin-top:20px;
+gap:20px;
+}
 
-  .hero p {
-    font-size: 15px;
-  }
 
-  nav a {
-    font-size: 15px;
-  }
 
-  .button {
-    width: 180px;
-    padding: 12px 20px;
-  }
+#menu-toggle:checked ~ ul{
+display:flex;
+}
 
-  section h2 {
-    font-size: 28px;
-  }
+.hero{
+margin:80px auto;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.hero h2{
+font-size:28px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.button{
+display:block;
+width:220px;
+margin:15px auto;
+}
+
+}
+
+
+
+@media (max-width:480px){
+
+.logo img{
+width:60px;
+height:60px;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.hero h2{
+font-size:22px;
+}
+
+.hero p{
+font-size:15px;
+}
+
+.button{
+width:180px;
+}
 }
