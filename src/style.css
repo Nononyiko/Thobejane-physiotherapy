@@ -1,100 +1,168 @@
 
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  margin: 0;
-  min-height: 100vh;
-  position: relative;
-  background-color: #e8f7fa;
+  background-color: #f5f9fc;
+  color: #333;
 }
 
 
 
 .container {
-  text-align: center;
-  margin: 0 auto;
-  
   max-width: 1400px;
-
-  
-  color: rgb(250, 245, 245);
-
-  padding: 20px;
-  
-
-  
-}
-
-header{
-min-height: 700px;
-  padding: 100px 20px;
-
-  background-image: linear-gradient(rgba(0,0,0,0.4) ,rgba(0,0,0,0.4)), 
-  url("images/logo.pt.png");
-  background-size: 350 px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  
+  margin: 0 auto;
 }
 
 
 
-nav {
-  margin-top: 40px;
+header {
+  min-height: 100vh;
+  padding: 40px 80px;
+
   display: flex;
-  justify-content: center;
-}
-
-
-
-nav ul {
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 35px;
 
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  text-align: center;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.45)),
+    url("images/physio-room.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
 
-nav li {
+.hero {
+  max-width: 700px;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 72px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  color: #2ec4d6;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.hero p {
+  color: white;
+  font-size: 22px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+
+
+.button {
   display: inline-block;
-}
+  margin: 10px;
+  padding: 15px 35px;
 
+  background: #00a8c6;
+  color: white;
 
-
-nav a {
   text-decoration: none;
-  color: white;
-  font-size: 18px;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  border-radius: 30px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #0088a3;
 }
 
 
 
-nav a:hover {
+section {
+  padding: 80px 40px;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 40px;
   color: #00a8c6;
-  border-bottom: 2px solid #00a8c6;
-  padding-bottom: 5px;
-}
-.services {
-  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
-.services p {
-  font-size: 18px;
-  color: white;
-  margin: 10px 0;
+
+
+#about {
+  background: white;
+}
+
+
+#services {
+  background: #eef8fb;
+}
+
+
+
+#contact {
+  background: white;
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
+  background: #010627;
+  color: white;
+}
+
+footer a {
+  color: #2ec4d6;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+@media (max-width: 768px) {
+
+  header {
+    padding: 30px 20px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .button {
+    display: block;
+    width: 220px;
+    margin: 15px auto;
+  }
+
+  section h2 {
+    font-size: 32px;
+  }
 }
