@@ -37,7 +37,7 @@ header {
 
   background-image:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url("src/images/pt.logo.png");
+    url("src/images/logo.pt.png");
 
   background-size: cover;
   background-position: center;
