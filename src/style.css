@@ -29,16 +29,15 @@ body {
 }
 
 /* =====================
-   HEADER (BACKGROUND IMAGE FIXED)
+   HEADER + BACKGROUND IMAGE
 ===================== */
 header {
   min-height: 100vh;
   padding: 30px 60px;
 
-  /* ✔ YOUR ORIGINAL IMAGE FIXED PATH */
   background-image:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url("images/pt.logo.png");
+    url("src/images/pt.logo.png");
 
   background-size: cover;
   background-position: center;
@@ -55,7 +54,6 @@ nav {
   position: relative;
 }
 
-/* LOGO */
 .logo img {
   width: 90px;
   height: 90px;
@@ -155,7 +153,15 @@ section h2 {
 }
 
 /* =====================
-   CONTACT
+   GLOBAL ICON SIZE (ALL ICONS)
+===================== */
+i {
+  font-size: 18px;
+  color: #00a8c6;
+}
+
+/* =====================
+   CONTACT SECTION (INSTAGRAM STYLE FIXED)
 ===================== */
 .contact {
   background: #eef8fb;
@@ -168,43 +174,49 @@ section h2 {
   font-size: 18px;
 }
 
-/* CONTACT CARDS (Instagram-style small) */
+/* STACKED SMALL CONTACT ITEMS */
 .contact-details {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
+/* SMALL INSTAGRAM STYLE BOX */
 .contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
   background: white;
-  padding: 18px;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-  transition: 0.3s;
-  text-align: center;
+  padding: 10px 14px;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  transition: 0.2s;
+
+  max-width: 320px;
+  width: 100%;
 }
 
+/* SUBTLE HOVER (NOT BIG CARDS) */
 .contact-item:hover {
-  transform: translateY(-6px);
+  transform: scale(1.02);
 }
 
-.contact-item i {
-  font-size: 18px;   /* FIXED SMALL ICON SIZE */
-  color: #00a8c6;
-  margin-bottom: 10px;
-}
-
+/* TEXT */
 .contact-item a,
 .contact-item p {
   font-size: 14px;
   color: #010627;
   text-decoration: none;
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 /* =====================
-   HOURS
+   HOURS (UNCHANGED STYLE)
 ===================== */
 .hours {
   max-width: 700px;
@@ -253,7 +265,7 @@ footer a {
 }
 
 /* =====================
-   RESPONSIVE
+   MOBILE RESPONSIVE
 ===================== */
 @media (max-width: 768px) {
 
@@ -300,7 +312,22 @@ footer a {
     margin: 15px auto;
   }
 
-  .contact-details {
-    grid-template-columns: 1fr;
+  .contact-item {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .button {
+    width: 180px;
   }
 }
