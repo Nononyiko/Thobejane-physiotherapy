@@ -336,3 +336,7 @@ footer a {
     width: 180px;
   }
 }
+
+html {
+    scroll-behavior: smooth;
+}
