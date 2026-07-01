@@ -204,158 +204,6 @@ HAMBURGER
     cursor:pointer;
 
 }
-header{
-    position:relative;
-    height:100vh;
-
-    background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-    url("images/logo.pt.png");
-
-    background-size:cover;
-    background-position:center center;
-    background-repeat:no-repeat;
-
-    display:flex;
-    flex-direction:column;
-}
-
-.overlay{
-    position:absolute;
-    inset:0;
-    background:linear-gradient(
-        to right,
-        rgba(0,0,0,.60) 0%,
-        rgba(0,0,0,.40) 35%,
-        rgba(0,0,0,.15) 100%
-    );
-}
-
-nav{
-
-    position:relative;
-    z-index:2;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:25px 70px;
-
-    border-bottom:1px solid rgba(255,255,255,.15);
-}
-
-/*==================================
-LOGO
-===================================*/
-
-.logo{
-
-    display:flex;
-    align-items:center;
-    gap:18px;
-
-}
-
-.logo img{
-
-    width:78px;
-    height:78px;
-
-    object-fit:cover;
-
-    border-radius:50%;
-
-    background:white;
-
-    padding:4px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.25);
-
-}
-
-.logo-text{
-
-    display:flex;
-    flex-direction:column;
-
-}
-
-.logo-text h2{
-
-    color:white;
-
-    font-size:20px;
-
-    font-weight:700;
-
-    line-height:1;
-
-}
-
-.logo-text span{
-
-    color:#00b7df;
-
-    font-size:16px;
-
-    font-weight:600;
-
-    margin-top:6px;
-
-    letter-spacing:1px;
-
-}
-
-/*==================================
-NAV LINKS
-===================================*/
-
-nav ul{
-
-    display:flex;
-
-    gap:55px;
-
-    list-style:none;
-
-}
-
-nav ul li{
-
-    list-style:none;
-
-}
-
-nav ul li a{
-
-    color:white;
-
-    text-decoration:none;
-
-    font-size:20px;
-
-    font-weight:500;
-
-    transition:.3s;
-
-}
-
-nav ul li a:hover{
-
-    color:#00b7df;
-
-}
-
-/*==================================
-HAMBURGER
-===================================*/
-
-#menu-toggle{
-
-    display:none;
-
-}
 
 .hamburger{
 
@@ -368,125 +216,69 @@ HAMBURGER
     cursor:pointer;
 
 }
-
 /*==================================
 HERO
-===================================*/
+==================================*/
 
 .hero{
-
     position:relative;
-
     z-index:2;
-
     flex:1;
-
     display:flex;
-
+    justify-content:center;
     align-items:center;
-
-    padding:0 75px;
-
+    text-align:center;
+    padding:0 30px;
 }
 
 .hero-content{
-
-    max-width:650px;
-
+    max-width:700px;
 }
 
 .hero h1{
-
     color:white;
-
-    font-size:86px;
-
+    font-size:72px;
+    font-weight:700;
     line-height:1.1;
-
-    font-weight:800;
-
 }
 
 .hero h2{
-
     color:#00b7df;
-
-    font-size:58px;
-
-    margin-top:18px;
-
-    font-weight:700;
-
-}
-
-.line{
-
-    width:90px;
-
-    height:5px;
-
-    background:#00b7df;
-
-    margin:30px 0;
-
+    font-size:42px;
+    margin:15px 0;
+    font-weight:600;
 }
 
 .hero p{
-
     color:white;
+    font-size:20px;
+    margin-bottom:40px;
+}
 
-    font-size:25px;
-
-    margin-bottom:45px;
-
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
 /*==================================
 BUTTONS
-===================================*/
-
-.hero-buttons{
-
-    display:flex;
-
-    gap:22px;
-
-    flex-wrap:wrap;
-
-}
+==================================*/
 
 .button{
-
+    display:inline-block;
+    padding:16px 36px;
     background:#00b7df;
-
     color:white;
-
-    padding:18px 38px;
-
-    border-radius:40px;
-
     text-decoration:none;
-
-    font-size:20px;
-
+    border-radius:35px;
+    font-size:18px;
     font-weight:600;
-
-    transition:.35s;
-
-}
-
-.button i{
-
-    margin-right:10px;
-
+    transition:.3s;
 }
 
 .button:hover{
-
-    transform:translateY(-4px);
-
     background:#0099bc;
-
-    box-shadow:0 12px 30px rgba(0,183,223,.35);
-
+    transform:translateY(-4px);
 }
