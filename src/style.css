@@ -30,29 +30,33 @@ body{
 
 header{
     min-height:100vh;
-    padding:30px 70px;
 
-    background-image:
+    background:
     linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
     url("images/logo.pt.png");
 
     background-size:cover;
-    background-position:center 25%;
+    background-position:center;
     background-repeat:no-repeat;
 
     display:flex;
     flex-direction:column;
 }
-
 /* ===========================
    NAVIGATION
 =========================== */
 
-nav{
+navnav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    position:relative;
+
+    padding:25px 60px;
+
+    background:rgba(0,0,0,.18);
+    backdrop-filter:blur(8px);
+
+    border-bottom:1px solid rgba(255,255,255,.15);
 }
 
 /* ===========================
@@ -60,38 +64,31 @@ nav{
 =========================== */
 
 .logo img{
-    width:110px;
-    height:110px;
-    border-radius:50%;
-    object-fit:cover;
-    border:3px solid rgba(255,255,255,.85);
-    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    width:220px;
+    height:auto;
+    border:none;
+    border-radius:0;
+    box-shadow:none;
 }
-
 /* ===========================
    NAV LINKS
 =========================== */
 
 nav ul{
     display:flex;
-    list-style:none;
-    gap:45px;
-}
-
-nav ul li{
+    gap:55px;
     list-style:none;
 }
 
 nav a{
-    text-decoration:none;
     color:white;
-    font-size:19px;
-    font-weight:600;
-    transition:.3s;
+    text-decoration:none;
+    font-size:24px;
+    font-weight:500;
 }
 
 nav a:hover{
-    color:#00a8c6;
+    color:#12b8df;
 }
 
 /* ===========================
@@ -115,60 +112,76 @@ nav a:hover{
 =========================== */
 
 .hero{
-    max-width:850px;
-    margin:auto;
-    text-align:center;
+    flex:1;
+
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+
+    padding:0 80px;
+
+    text-align:left;
 }
 
 .hero h1{
-    color:white;
-    font-size:80px;
+    font-size:90px;
+    color:#fff;
+    line-height:1;
     font-weight:700;
-    line-height:1.1;
-    letter-spacing:2px;
 }
 
 .hero h2{
-    color:#00a8c6;
-    font-size:46px;
-    margin:20px 0;
-    font-weight:600;
+    font-size:56px;
+    color:#12b8df;
+    margin:18px 0;
 }
 
 .hero p{
-    color:white;
-    font-size:22px;
-    line-height:1.8;
-    margin-bottom:45px;
+    color:#fff;
+    font-size:24px;
+    margin:40px 0;
 }
 
+.line{
+    width:75px;
+    height:5px;
+    background:#12b8df;
+    margin:35px 0;
+}
 /* ===========================
    HERO BUTTONS
 =========================== */
 
 .hero-buttons{
     display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
+    gap:25px;
 }
 
 .button{
-    display:inline-block;
-    padding:16px 40px;
-    background:#00a8c6;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:12px;
+
+    padding:18px 38px;
+
+    border-radius:50px;
+
+    background:#12b8df;
+
     color:white;
+
+    font-size:22px;
+
     text-decoration:none;
-    border-radius:35px;
-    font-size:18px;
-    font-weight:600;
+
     transition:.3s;
 }
 
 .button:hover{
-    background:#007d95;
+    background:#0998bb;
     transform:translateY(-4px);
-    box-shadow:0 12px 25px rgba(0,168,198,.35);
 }
 
 /* ===========================
@@ -383,23 +396,15 @@ nav{
 nav ul{
     display:none;
     flex-direction:column;
-
     width:100%;
-
-    margin-top:20px;
-
     text-align:center;
-
     background:#010627;
-
-    padding:20px 0;
-
+    margin-top:20px;
+    padding:25px;
     border-radius:12px;
-
-    gap:20px;
 }
 
-#menu-toggle:checked ~ ul{
+#menu-toggle:checked~ul{
     display:flex;
 }
 
