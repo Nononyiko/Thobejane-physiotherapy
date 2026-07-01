@@ -16,18 +16,14 @@ body{
 }
 
 .learn-header{
-    min-height:75vh;
+    min-height:350px;
     padding:30px 60px;
 
-    background-image:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("images/logo.pt.png");
-
-    background-size:cover;
-    background-position:center;
+    background:#010627;
 
     display:flex;
     flex-direction:column;
+    justify-content:center;
 }
 
 nav{
@@ -35,6 +31,8 @@ nav{
     justify-content:space-between;
     align-items:center;
     position:relative;
+
+    padding-bottom:30px;
 }
 
 .logo img{
@@ -77,21 +75,21 @@ nav a:hover{
 
 .hero{
     text-align:center;
-    margin:auto;
-    max-width:750px;
+    max-width:700px;
+    margin:40px auto 0;
 }
 
 .hero h1{
     color:white;
-    font-size:56px;
-    margin-bottom:20px;
+    font-size:48px;
+    margin-bottom:15px;
 }
 
 .hero p{
-    color:white;
-    font-size:20px;
+    color:#e5e5e5;
+    font-size:18px;
     line-height:1.8;
-    margin-bottom:35px;
+    margin-bottom:30px;
 }
 
 .button{
