@@ -346,3 +346,7 @@ width:220px;
 }
 
 }
+
+html {
+    scroll-behavior: smooth;
+}
