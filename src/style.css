@@ -282,3 +282,80 @@ BUTTONS
     background:#0099bc;
     transform:translateY(-4px);
 }
+
+/*==================================
+CONTACT US
+==================================*/
+
+.contact{
+    padding:80px 30px;
+    background:#eef8fb;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:42px;
+    color:#010627;
+    margin-bottom:15px;
+}
+
+.contact > p{
+    font-size:18px;
+    color:#666;
+    margin-bottom:45px;
+}
+
+/* Contact cards */
+
+.contact-details{
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    background:#fff;
+
+    padding:14px 18px;
+
+    border-radius:12px;
+
+    width:240px;
+    min-height:80px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.contact-item:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 28px rgba(0,0,0,.15);
+}
+
+.contact-item i{
+    font-size:18px;
+    color:#00b7df;
+    min-width:20px;
+}
+
+.contact-item a,
+.contact-item p{
+    margin:0;
+    text-align:left;
+    text-decoration:none;
+    color:#010627;
+    font-size:14px;
+    line-height:1.5;
+    font-weight:500;
+}
+
+.contact-item a:hover{
+    color:#00b7df;
+}
